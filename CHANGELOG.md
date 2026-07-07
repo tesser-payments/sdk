@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.4] — 2026-07-07
+
+### Fixed
+
+- `signStep` now accepts `ETHEREUM_SEPOLIA`. The network-to-Turnkey-type map carried the Base and Polygon testnets but not Ethereum's, so staging steps planned on Ethereum Sepolia were rejected client-side with `TesserConfigError`.
+
 ## [0.0.1] — 2026-05-18
 
 ### Added
