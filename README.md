@@ -72,7 +72,8 @@ const step: StepForSigning = {
   signWith: '0xabc...',                // account.crypto_wallet_address from
                                        //   GET /v1/accounts/{from_account_id}
   network: 'BASE_SEPOLIA',             // BASE | BASE_SEPOLIA | ETHEREUM |
-                                       //   POLYGON | POLYGON_AMOY | SOLANA
+                                       //   ETHEREUM_SEPOLIA | POLYGON |
+                                       //   POLYGON_AMOY | SOLANA
 };
 
 const signed = await signer.signStep(step);
