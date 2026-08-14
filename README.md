@@ -8,10 +8,9 @@ it. Bring your own client.
 ## Install
 
 ```sh
-bun add @tesser-payments/sdk-ts @tesser-payments/types
+bun add @tesser-payments/sdk-ts
 ```
 
-`@tesser-payments/types` is a peer dependency — install it alongside the SDK.
 `@turnkey/api-key-stamper` is a runtime dependency (used to locally stamp
 `signCreateWallet` and `signStep` activities) and is installed automatically;
 its Apache-2.0 license aligns with the SDK's. Apache 2.0 licensed.

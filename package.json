@@ -24,7 +24,7 @@
   },
   "scripts": {
     "build": "bun run build:js && bun run build:types",
-    "build:js": "bun build ./src/index.ts --target=node --format=esm --outdir=./dist --external @tesser-payments/types",
+    "build:js": "bun build ./src/index.ts --target=node --format=esm --outdir=./dist",
     "build:types": "tsc -p tsconfig.build.json",
     "prepack": "bun run build",
     "test": "vitest run",
@@ -32,9 +32,6 @@
     "lint": "biome check .",
     "lint:fix": "biome check . --write",
     "typecheck": "tsc --noEmit"
-  },
-  "peerDependencies": {
-    "@tesser-payments/types": "*"
   },
   "dependencies": {
     "@turnkey/api-key-stamper": "^0.6.5"
@@ -46,7 +43,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9",
-    "@tesser-payments/types": "*",
     "@types/node": "^20",
     "typescript": "^5.4",
     "vitest": "^3.2.6"

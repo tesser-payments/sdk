@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+
+- `@tesser-payments/types` peer dependency. No SDK source or type declaration imported it — every exported type is defined locally in `src/internal/types.ts`. Installing it alongside the SDK is no longer required.
+
 ## [0.0.4] — 2026-07-07
 
 ### Fixed
